@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+    position: relative;
+    z-index: 1;
+    .navigation {
+        display: flex;
+        margin-left: auto;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        li {
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .btn__bag, .btn__search {
+        margin-left: 100px;
+        cursor: pointer;
+    }
+    .btn__bag {
+        margin-top: -10px;
+    }
+}

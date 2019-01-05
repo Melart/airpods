@@ -1,0 +1,22 @@
+.advantages {
+    background-color: #ffffff;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li {
+            span {
+                font-size: 10px;
+                color: $greyColor;
+            }
+            div {
+                font-size: 48px;
+                letter-spacing: 0.04em;
+                color: $titleColor;
+            }
+            p {
+                color: $textColor;
+            }
+        }
+    }
+}

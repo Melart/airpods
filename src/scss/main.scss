@@ -1,0 +1,40 @@
+@import "reset";
+@import "global-variables";
+@import "slick";
+@import '_header';
+@import '_footer';
+@import '_offer';
+@import '_advantages';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+main {
+    background: $bgColor;
+}
+.wrapper {
+    width: 1290px;
+    margin: 0 auto;
+}
+a {
+    color: $greyColor;
+    text-decoration: none;
+    &:hover {
+        color: $titleColor;
+        text-decoration: none;
+    }
+}
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+h1 {
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+}
