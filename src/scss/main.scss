@@ -5,6 +5,7 @@
 @import '_footer';
 @import '_offer';
 @import '_advantages';
+@import '_chip';
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -19,6 +20,11 @@ main {
     margin: 0 auto;
 }
 a {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     color: $greyColor;
     text-decoration: none;
     &:hover {
@@ -38,3 +44,16 @@ h1 {
     line-height: 1.5em;
     letter-spacing: 0.04em;
 }
+h2 {
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+}
+h3 {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+}
+p {
+    font-weight: 300;
+}
+@import 'media';

@@ -54,13 +54,19 @@
             color: $textColor;
             position: relative;
             z-index: 1;
+            display: flex;
+            align-items: center;
+            width: 100px;
+            svg {
+                margin-left: 10px;
+            }
             &:before {
                 content: '';
                 position: absolute;
                 left: 0;
                 bottom: 0;
                 background-color: $activeColor;
-                width: 45%;
+                width: 35%;
                 height: 100%;
                 z-index: -1;
                 transition: all 0.4s ease-in-out;

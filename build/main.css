@@ -204,7 +204,8 @@ footer {
     z-index: 0; }
 
 .advantages {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 60px 0 110px 0; }
   .advantages ul {
     display: flex;
     align-items: center;
@@ -218,6 +219,9 @@ footer {
       color: #000000; }
     .advantages ul li p {
       color: rgba(0, 0, 0, 0.7); }
+
+.merit {
+  background-color: #ffffff; }
 
 body {
   font-family: 'Roboto', sans-serif;

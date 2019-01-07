@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlagin = require("html-webpack-plugin");
 const MiniCssExtractPlagin = require("mini-css-extract-plugin");
-const CleanWebpackPlagin = require("clean-webpack-plugin");
 
 module.exports = {
     entry: "./src/js/index.js",
@@ -28,19 +27,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [
-                    'file-loader',
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            bypassOnDebug: true, 
-                            disable: true, 
-                        },
-                    },
-                ],
-            }
-        ]
+                test: /\.(jpg|png|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'img/[name].[ext]'
+                },
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlagin({

@@ -1,0 +1,39 @@
+.chip {
+    background: url(../img/kui-ye-chen-359084-unsplash.png) no-repeat center top / cover;
+    padding-top: 110px;
+    // padding-bottom: 475px;
+    h2 {
+        text-align: center;
+        width: 660px;
+        margin: 0 auto;
+    }
+    .cards {
+        margin-top: 60px;
+        padding-bottom: 415px;
+        display: flex;
+        justify-content: center;
+        &__item {
+            width: 405px;
+            &:first-child {
+                margin-right: 85px;
+            }
+        }
+        p {
+            letter-spacing: 0.02em;
+            padding-left: 30px;
+            line-height: 1.5em;
+            margin-top: 30px;
+            position: relative;
+            font-weight: 300;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 10px;
+                display: inline-block;
+                height: 80%;
+                border-left: 1px solid rgba(0,0,0,.1);
+            }
+        }
+    }
+}

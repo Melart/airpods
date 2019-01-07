@@ -1,5 +1,6 @@
 .advantages {
     background-color: #ffffff;
+    padding: 60px 0 110px 0;
     ul {
         display: flex;
         align-items: center;
@@ -19,4 +20,64 @@
             }
         }
     }
+}
+.merit {
+    background-color: #ffffff;
+    display: flex;
+    &__image {
+        img {
+            height: 100%;
+        }
+    }
+    .sentence {
+        margin-top: 60px;
+        margin-left: 78px;
+        h2 {
+            width: 470px;
+            line-height: 1.5em;
+        }
+        p {
+            margin-top: 68px;
+            margin-bottom: 60px;
+            width: 345px;
+            color: $textColor;
+            padding-left: 30px;
+            letter-spacing: 0.02em;
+            line-height: 1.5em;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                height: 100%;
+                border-left: 1px solid rgba(0,0,0,.1);
+            }
+        }
+        .btn__more {
+            margin-left: 30px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 45%;
+                bottom: -10px;
+                left: 0;
+                border-top: 2px solid $activeColor;
+                transition: all 0.5s ease-in-out;
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -ms-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+            }
+            &:hover {
+                color: $greyColor;
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
 }
